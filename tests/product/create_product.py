@@ -1,20 +1,24 @@
-import tests.keycloak_tests.get_user_token
-import requests
 import json
+
+import requests
+from sqlalchemy import null
+
+import tests.keycloak_tests.get_user_token
+from tests.product import create_category
+
+base_url = "http://localhost:8222/api/v1/products"
 
 token_data = tests.keycloak_tests.get_user_token.post_request_get_user_token()
 access_token = token_data["access_token"]
-print("access_token from keycloak another file :", access_token)
 
-base_url = "http://localhost:8222/api/v1/"
-
+category_id = create_category.saved_category_id
 
 def create_product():
-    url = base_url + "products/create-product"
+    url = base_url + "/create-product"
     headers = {
-        "Accept": "application/json",
+        "Accept": "*/*",
         "Authorization": f"Bearer {access_token}",
-        "Content-Type": "application/json"
+        "Content-type": "application/json"
     }
 
     data = {
@@ -28,7 +32,7 @@ def create_product():
         "isAvailableForBuyNow": True,
         "isSold": False,
         "quantity": 10,
-        "categoryId": 1
+        "categoryId": category_id
     }
 
     response = requests.post(url=url, headers=headers, json=data)
@@ -41,5 +45,14 @@ def create_product():
     json_str = json.dumps(json_data, indent=4)
     print("create a product ", json_str)
 
+    product_id = json_data["productId"]
 
-create_product()
+    assert product_id is not None, "product is null!"
+
+    print("product id ", product_id)
+
+    return product_id
+
+
+saved_product_id = create_product()
+# create_product()
