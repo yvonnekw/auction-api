@@ -1,8 +1,8 @@
 import requests
 import json
 
-
 keycloak_token_url = "http://localhost:9098/realms/auction-realm/protocol/openid-connect/token"
+
 
 def post_request_get_user_token():
     url = keycloak_token_url
@@ -27,9 +27,9 @@ def post_request_get_user_token():
 
     access_token = json_data["access_token"]
 
-    #print("access_token ", access_token)
+    # print("access_token ", access_token)
 
-   # return access_token
+    # return access_token
 
     return json_data
 
@@ -42,4 +42,4 @@ def get_token():
 
 post_request_get_user_token()
 
-#get_token()
+# get_token()
