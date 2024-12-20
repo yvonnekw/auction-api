@@ -1,0 +1,44 @@
+{
+    "categories": [
+        {
+            "description": "Devices and gadgets including smartphones, laptops, cameras, and more.",
+            "name": "Electronics"
+        },
+        {
+            "description": "Appliances for home use such as refrigerators, washing machines, and microwaves.",
+            "name": "Home Appliances"
+        },
+        {
+            "description": "Clothing, footwear, and accessories for men, women, and children.",
+            "name": "Fashion"
+        },
+        {
+            "description": "Sporting goods, fitness equipment, and outdoor gear.",
+            "name": "Sports & Fitness"
+        },
+        {
+            "description": "A wide range of books across different genres including fiction, non-fiction, academic, and more.",
+            "name": "Books"
+        },
+        {
+            "description": "Cosmetics, skincare, health supplements, and personal care items.",
+            "name": "Beauty & Health"
+        },
+        {
+            "description": "Automotive parts, accessories, and tools for vehicles.",
+            "name": "Automotive"
+        },
+        {
+            "description": "Toys, board games, and puzzles for children of all ages.",
+            "name": "Toys & Games"
+        },
+        {
+            "description": "Furniture for homes and offices including chairs, tables, beds, and storage.",
+            "name": "Furniture"
+        },
+        {
+            "description": "Groceries, snacks, beverages, and other food-related items.",
+            "name": "Food & Beverages"
+        }
+    ]
+}

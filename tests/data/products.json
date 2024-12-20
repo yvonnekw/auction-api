@@ -1,0 +1,56 @@
+{
+    "products": [
+        {
+            "productName": "iPhone 14 Pro",
+            "brandName": "Apple",
+            "description": "Latest Apple smartphone with A16 chip, 128GB storage, and 48MP camera",
+            "startingPrice": 999.99,
+            "buyNowPrice": 1200.0,
+            "colour": "Space Black",
+            "productSize": "6.1 inches",
+            "isAvailableForBuyNow": true,
+            "isSold": false,
+            "quantity": 10,
+            "categoryId": 1
+        },
+        {
+            "productName": "Samsung QLED TV 55-inch",
+            "brandName": "Samsung",
+            "description": "55-inch 4K UHD Smart QLED TV with Quantum Processor 4K",
+            "startingPrice": 800.0,
+            "buyNowPrice": 950.0,
+            "colour": "Black",
+            "productSize": "55 inches",
+            "isAvailableForBuyNow": true,
+            "isSold": false,
+            "quantity": 5,
+            "categoryId": 2
+        },
+        {
+            "productName": "Nike Air Zoom Pegasus 39",
+            "brandName": "Nike",
+            "description": "Men's running shoes with responsive cushioning and breathable mesh",
+            "startingPrice": 120.0,
+            "buyNowPrice": 150.0,
+            "colour": "White",
+            "productSize": "Size 10",
+            "isAvailableForBuyNow": true,
+            "isSold": false,
+            "quantity": 20,
+            "categoryId": 3
+        },
+        {
+            "productName": "Adidas Ultraboost 21",
+            "brandName": "Adidas",
+            "description": "Comfortable and stylish running shoes with Boost cushioning technology",
+            "startingPrice": 130.0,
+            "buyNowPrice": 160.0,
+            "colour": "Black",
+            "productSize": "Size 9",
+            "isAvailableForBuyNow": true,
+            "isSold": false,
+            "quantity": 15,
+            "categoryId": 3
+        }
+    ]
+}
