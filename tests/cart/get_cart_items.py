@@ -9,7 +9,7 @@ token_data = tests.keycloak_tests.get_user_token.post_request_get_user_token()
 access_token = token_data["access_token"]
 
 def get_user_cart():
-    url = base_url + "/get-user-cart"
+    url = base_url + "/items"
     headers = {
         "Accept": "*/*",
         "Authorization": f"Bearer {access_token}",
@@ -32,7 +32,7 @@ def get_user_cart():
 
     print("cart id ", cart_id)
 
-    return json_data
+    return cart_id
 
 
 saved_cart_id = get_user_cart()
