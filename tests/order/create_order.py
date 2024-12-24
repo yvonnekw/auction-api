@@ -11,6 +11,7 @@ access_token = token_data["access_token"]
 product_one_id = create_product.saved_product_id
 product_two_id = create_product.saved_product_id
 
+
 def create_order():
     url = base_url + "/create-order"
     headers = {
@@ -42,7 +43,7 @@ def create_order():
 
     response = requests.post(url=url, headers=headers, json=data)
 
-    #assert response.status_code == 200
+    # assert response.status_code == 200
     json_data = response.json()
 
     print(f"Status Code: {response.status_code}")
@@ -60,4 +61,3 @@ def create_order():
 
 
 saved_order_id = create_order()
-
