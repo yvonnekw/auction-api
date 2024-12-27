@@ -4,7 +4,7 @@ import requests
 from sqlalchemy import null
 
 import tests.keycloak_tests.get_user_token
-from tests.product import create_category
+from tests.product import category
 
 base_url = "http://localhost:8222/api/v1/products"
 

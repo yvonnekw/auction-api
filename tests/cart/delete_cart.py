@@ -23,20 +23,7 @@ def delete_cart():
     response = requests.delete(url=url, headers=headers)
 
     assert response.status_code == 204
-    #json_data = response.json()
 
     print(f"Status Code: {response.status_code}")
-
-    #json_str = json.dumps(json_data, indent=4)
-    #print("getting user cart ", json_str)
-
-   # cart_id = json_data["cartId"]
-
-    #assert cart_id is not None, "cart is null!"
-
-    #print("cart id ", cart_id)
-
-    #return cart_id
-
 
 delete_cart()

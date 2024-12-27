@@ -1,3 +1,6 @@
+
+"""
+
 import json
 import requests
 import tests.keycloak_tests.get_user_token
@@ -44,3 +47,4 @@ def add_cart():
 
 
 saved_cart_id = add_cart()
+"""

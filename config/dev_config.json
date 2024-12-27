@@ -1,0 +1,13 @@
+{
+  "base_url": "http://localhost:8222/api/v1",
+  "keycloak_token_url": "http://localhost:9098/realms/auction-realm/protocol/openid-connect/token",
+  "credentials": {
+    "client_id": "auction-client",
+    "grant_type": "password",
+    "username": "testuser",
+    "password": "password",
+    "client_secret": "4fLoRVTTU7Hu7S1iBY2FNwPY7zYJYM77"
+  },
+  "timeout": 30
+}
+

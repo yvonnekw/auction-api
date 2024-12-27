@@ -1,7 +1,15 @@
 import requests
 import json
 
-keycloak_token_url = "http://localhost:9098/realms/auction-realm/protocol/openid-connect/token"
+from base_api import BaseAPI
+
+# keycloak_token_url = "http://localhost:9098/realms/auction-realm/protocol/openid-connect/token"
+
+with open("../../config/dev_config.json", "r") as json_file:
+    config = json.load(json_file)
+
+
+keycloak_token_url = config["keycloak_token_url"]
 
 
 def post_request_get_user_token():
